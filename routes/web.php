@@ -25,6 +25,9 @@ Route::livewire('/admin/product', 'product.index')
     ->name('admin.product')
     ->middleware('auth');
 
+Route::livewire('/shop', 'shop.index')
+    ->name('shop.index');
+
 
 //route profile
 Route::get('/profile', 'HomeController@about')->name('profile')->middleware('auth');
