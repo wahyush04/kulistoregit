@@ -30,3 +30,6 @@ Route::livewire('/admin/product', 'product.index')
 Route::get('/profile', 'HomeController@about')->name('profile')->middleware('auth');
 Route::get('/rekening', 'HomeController@rekening')->name('rek');
 Route::get('/keamanan', 'HomeController@keamanan')->name('keamanan');
+
+//route edit profile
+Route::get('/profile/edit', 'HomeController@keamanan')->name('keamanan');
