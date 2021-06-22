@@ -38,6 +38,7 @@
                         <li class="nav-item">
                             <a href="{{route('shop.index')}}" class="nav-link">Store</a>
                         </li>
+                        @livewire('shop.cartnav')
                     </ul>
 
                     <!-- Right Side Of Navbar -->
