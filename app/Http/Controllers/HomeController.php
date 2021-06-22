@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -28,8 +29,20 @@ class HomeController extends Controller
 
     public function about()
     {
-        return view('profile.profile');
+        $user = User::all();
+        return view('profile.profile',compact('user'));
     }
+
+    public function insert(Request $request)
+    {
+        $upload = new User;
+        $upload->image = $request->image;
+        $upload->save();
+
+        return redirect('/profile');
+    }
+
+    
     public function rekening()
     {
         return view('profile.rekening');

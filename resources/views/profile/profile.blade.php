@@ -10,16 +10,18 @@
 </style>
 
 <h2 class="container font-weight-bold">My Profile</h2>
+@if (session('status'))
+            <div class="alert alert-success">
+                {{ session('status') }}
+            </div>
+            @endif
 
 <div class="container" style="margin-top: 30px">
     <div class="card shadow">
         <div class="card-body">
             <div class="row align-items-top mb-3">
                 <div class="col-3">
-                    <img src="/img/{{ Auth::user()->gambar }}" class="img-thumbnail">
-                    <div class="text-center mt-2">
-                        <button class="btn btn-primary">Ubah Foto</button>
-                    </div>
+                    <img src="/img/{{ Auth::user()->image }}" class="img-thumbnail">
                 </div>
 
                 <div class="col-9">
@@ -49,22 +51,22 @@
                             <tr>
                                 <td>Nama Lengkap</td>
                                 <td>:</td>
-                                <td class="text-left"></td>
+                                <td class="text-left">{{ Auth::user()->full_name }}</td>
                             </tr>
                             <tr>
                                 <td>Alamat</td>
                                 <td>:</td>
-                                <td class="text-left"></td>
+                                <td class="text-left">{{ Auth::user()->address }}</td>
                             </tr>
                             <tr>
                                 <td>Tanggal Lahir</td>
                                 <td>:</td>
-                                <td class="text-left"></td>
+                                <td class="text-left">{{ Auth::user()->born_date }}</td>
                             </tr>
                             <tr>
                                 <td>Jenis Kelamin</td>
                                 <td>:</td>
-                                <td class="text-left"></td>
+                                <td class="text-left">{{ Auth::user()->gender }}</td>
                             </tr>
                             <tr>
                                 <td>Member Since</td>
@@ -83,17 +85,19 @@
                             <tr>
                                 <td>Email</td>
                                 <td>:</td>
-                                <td class="text-left"></td>
+                                <td class="text-left">{{ Auth::user()->email}}</td>
                             </tr>
                             <tr>
                                 <td>Nomor HP</td>
                                 <td>:</td>
-                                <td class="text-left"></td>
+                                <td class="text-left">{{ Auth::user()->phone_number}}</td>
                             </tr>
                         </tbody>
                     </table>
-
-                    <button class="btn btn-primary mt-4 float-right">Ubah Profile</button>
+                    @foreach($user as $usr)
+                    @endforeach
+                    <a class="btn btn-primary mt-4 float-right" href="profile/{{$usr->id}}/edit">Ubah Profile</a>
+                    
                 </div>
 
             </div>
@@ -107,5 +111,4 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="./assets/js/bootstrap.bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/a7fbc8a9d9.js" crossorigin="anonymous"></script>
-</body>
 @endsection

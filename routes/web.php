@@ -35,4 +35,5 @@ Route::get('/rekening', 'HomeController@rekening')->name('rek');
 Route::get('/keamanan', 'HomeController@keamanan')->name('keamanan');
 
 //route edit profile
-Route::get('/profile/edit', 'HomeController@keamanan')->name('keamanan');
+Route::get('/profile/{user}/edit', 'ProfileController@edit')->name('edit')->middleware('auth');
+Route::patch('/profile/{user}', 'ProfileController@update')->name('update');
