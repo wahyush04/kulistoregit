@@ -29,17 +29,10 @@ Route::livewire('/shop', 'shop.index')
     ->name('shop.index');
 
 Route::livewire('/cart', 'shop.cart')
-    ->name('shop.cart');    
+    ->name('shop.cart');
 
 
 //route profile
 Route::get('/profile', 'HomeController@about')->name('profile')->middleware('auth');
 Route::get('/rekening', 'HomeController@rekening')->name('rek');
-<<<<<<< HEAD
 Route::get('/keamanan', 'HomeController@keamanan')->name('keamanan');
-=======
-Route::get('/keamanan', 'HomeController@keamanan')->name('keamanan');
-
-//route edit profile
-Route::get('/profile/edit', 'HomeController@keamanan')->name('keamanan');
->>>>>>> 30468cd90bcb3c2c1cffd45ce9a27abe5078b992
