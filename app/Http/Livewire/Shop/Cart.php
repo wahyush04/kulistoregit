@@ -13,8 +13,15 @@ class Cart extends Component
     public function mount(){
         $this->cart = FacadesCart::get();
     }
+
     public function render()
     {
         return view('livewire.shop.cart');
+    }
+
+    public function removeFromCart($id){
+        FacadesCart::remove($id);
+        $this->cart = FacadesCart::get();
+        $this->emit('removeFromCart');
     }
 }

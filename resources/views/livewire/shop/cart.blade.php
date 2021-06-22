@@ -17,7 +17,7 @@
                                 <td>{{ $product->title }}</td>
                                 <td>Rp{{ number_format($product->price,2,",",".") }}</td>
                                 <td>
-                                    <button class="btn btn-sm btn-danger">
+                                    <button wire:click="removeFromCart({{$product->id}})" class="btn btn-sm btn-danger">
                                         Hapus
                                     </button>
                                 </td>
@@ -28,7 +28,7 @@
                         <tfoot>
                             <tr>
                                 <td colspan="3">
-                                    <button class="btn btn-primary float-right">
+                                    <button  class="btn btn-primary float-right">
                                         Checkout
                                     </button>
                                 </td>
