@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Shop;
 
 use App\Facades\Cart;
+use Facade\FlareClient\View;
 use Livewire\Component;
 
 class Cartnav extends Component
@@ -25,5 +26,8 @@ class Cartnav extends Component
 
     public function updateCartTotal(){
         $this->cartTotal = count(Cart::get()['products']);
+
+
     }
+
 }
