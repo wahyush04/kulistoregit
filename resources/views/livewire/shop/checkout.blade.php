@@ -103,6 +103,7 @@
                                         location.reload();
                                     }
                                 });
+
                             });
                         </script>
                     @endif
