@@ -94,9 +94,15 @@
                             </tr>
                         </tbody>
                     </table>
-                    @foreach($user as $usr)
-                    @endforeach
-                    <a class="btn btn-primary mt-4 float-right" href="profile/{{$usr->id}}/edit">Ubah Profile</a>
+                    
+                    <a class="btn btn-primary mt-4 float-right" href="profile/{{Auth::user()->id}}/edit">Ubah Profile</a>
+                    
+            
+                    
+                
+                    
+                
+                    
                     
                 </div>
 
