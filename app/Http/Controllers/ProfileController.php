@@ -4,9 +4,12 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
+use Livewire\WithFileUploads;
+use Livewire\Component;
 
 class ProfileController extends Controller
 {
+    use WithFileUploads;
     /**
      * Display a listing of the resource.
      *
@@ -24,7 +27,6 @@ class ProfileController extends Controller
      */
     public function create()
     {
-        
     }
 
     /**
@@ -69,27 +71,35 @@ class ProfileController extends Controller
      */
     public function update(Request $request, User $user)
     {
+        // $nm = $request->image;
+        // $namaFile = $nm->getClientOriginalExtension();
+
+
+        // dd($request->all());
+
         $request->validate([
             'nama_lengkap' => 'required',
             'alamat' => 'required',
             'tgl_lahir' => 'required',
-            'email' => 'required',
-            'nomor_hp' => 'required'
+            'nomor_hp' => 'required',
+            'email' => 'required'
         ]);
-
         User::where('id', $user->id)
             ->update([
                 'full_name' => $request->nama_lengkap,
                 'address' => $request->alamat,
                 'born_date' => $request->tgl_lahir,
-                'email' => $request->email,
                 'gender' => $request->jenis_kelamin,
+                'email' => $request->email,
                 'phone_number' => $request->nomor_hp,
                 'image' => $request->image
 
             ]);
+        // $nm->save(public_path() . '/img', $namaFile);
+
         return redirect('/profile')->with('status', 'Data berhasil diubah!');
     }
+
 
     /**
      * Remove the specified resource from storage.

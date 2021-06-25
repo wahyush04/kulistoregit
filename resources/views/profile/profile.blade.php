@@ -44,12 +44,6 @@
                             </p>
                         </h4>
 
-                        <hr>
-                        <h5>
-                            <p class="font-weight-bold ml-2">Biodata Diri</p>
-                        </h5>
-                        <hr>
-
                         <table class="table-borderless table-sm mb-3">
                             <tbody>
                                 <tr>
@@ -98,16 +92,17 @@
                                 </tr>
                             </tbody>
                         </table>
-                        @foreach ($user as $usr)
-                        @endforeach
-                        <a class="btn btn-primary mt-4 float-right" href="profile/{{ $usr->id }}/edit">Ubah
+
+                        <a class="btn btn-primary mt-4 float-right" href="profile/{{ Auth::user()->id }}/edit">Ubah
                             Profile</a>
 
                     </div>
 
                 </div>
+
             </div>
         </div>
+    </div>
     </div>
     </div>
     </div>

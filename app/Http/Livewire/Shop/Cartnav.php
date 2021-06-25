@@ -12,10 +12,13 @@ class Cartnav extends Component
     public $cartTotal = 0;
 
     protected $listeners = [
-        'addToCart' => 'updateCartTotal'
+        'addToCart' => 'updateCartTotal',
+        'removeFromCart' => 'updateCartTotal',
+        'cartClear' => 'updateCart'
     ];
 
-    public function mount(){
+    public function mount()
+    {
         $this->updateCartTotal();
     }
 
@@ -24,10 +27,8 @@ class Cartnav extends Component
         return view('livewire.shop.cartnav');
     }
 
-    public function updateCartTotal(){
+    public function updateCartTotal()
+    {
         $this->cartTotal = count(Cart::get()['products']);
-
-
     }
-
 }

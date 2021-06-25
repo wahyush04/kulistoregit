@@ -31,6 +31,9 @@ Route::livewire('/shop', 'shop.index')
 Route::livewire('/cart', 'shop.cart')
     ->name('shop.cart');
 
+Route::livewire('/checkout', 'shop.checkout')
+    ->name('shop.checkout');
+
 
 //route profile
 Route::get('/profile', 'HomeController@about')->name('profile')->middleware('auth');
