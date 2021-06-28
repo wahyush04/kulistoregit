@@ -29,7 +29,7 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background-color: #66DE93">
+        <nav class="navbar navbar-expand-md navbar-dark shadow-sm" style="background-color: #FF449F">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/home') }}">
                     {{ config('app.name', 'Laravel') }}
