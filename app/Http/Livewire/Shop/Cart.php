@@ -11,7 +11,9 @@ class Cart extends Component
 
     public function mount()
     {
-        $this->cart = FacadesCart::get();
+    $this->cart = FacadesCart::get();
+
+
     }
 
     public function render()

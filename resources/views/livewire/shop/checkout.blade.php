@@ -85,6 +85,49 @@
                             </div>
                         </form>
                     @else
+
+
+
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>Nama</th>
+                                        <th>Price</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach($cart['products'] as $product)
+
+                                    <tr>
+                                        <td>{{ $product['title'] }}</td>
+                                        <td>Rp{{ number_format($product['price'],2,",",".") }}</td>
+                                       
+                                    </tr>
+        
+                                    @endforeach
+                                </tbody>
+                               
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <h1>{{ $first_name }}</h1>
+                    <h1>{{ $last_name }}</h1>
+
+                    
+
+
+
+
+
+
+
+                    
+
                         <button wire:click="$emit('payment', '{{ $snapToken }}')" class="btn btn-primary">Payment</button>
                         <script>
                             window.livewire.on('payment', function (snapToken) {
