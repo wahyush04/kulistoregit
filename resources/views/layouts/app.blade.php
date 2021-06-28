@@ -29,7 +29,7 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark shadow-sm" style="background-color: #FF449F">
+        <nav class="navbar navbar-expand-md navbar-dark shadow-sm font-weight-bold" style="background-color: #FF449F">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/home') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -43,7 +43,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a href="{{ route('shop.index') }}" class="nav-link">Store</a>
 
                         </li>
