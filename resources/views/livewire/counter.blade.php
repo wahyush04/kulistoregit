@@ -1,3 +1,3 @@
 <div>
-    <h1>Hello World</h1>
+    <h1>Welcome to KuliStore!</h1>
 </div>
