@@ -12,11 +12,16 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+<<<<<<< HEAD
     {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
         integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script> --}}
     <script src="https://app.sandbox.midtrans.com/snap/snap.js"
         data-client-key="{{ config('services.midtrans.clientKey') }}"></script>
+=======
+    @livewireScripts
+    <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="{{ config('services.midtrans.clientKey') }}"></script>
+>>>>>>> b36f3e7a3d21a7888d65fdd8c6b3c1545917bc5f
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -28,17 +33,21 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+=======
+
+>>>>>>> b36f3e7a3d21a7888d65fdd8c6b3c1545917bc5f
     @livewireStyles
 </head>
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background-color: #66DE93">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ url('/home') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -79,8 +88,14 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="/profile">Profile</a>
+                                    <a class="dropdown-item" href="/profile">Profile</a> 
+
+                                    @if (Auth::user()->email === 'wahyush04@gmail.com')
+
                                     <a href="{{ route('admin.product') }}" class="dropdown-item">Products</a>
+                                    
+                                    @endif
+
                                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                                     document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
@@ -101,7 +116,7 @@
             @yield('content')
         </main>
     </div>
-    @livewireScripts
+    
     <script>
         function showPreview(event) {
             if (event.target.files.length > 0) {
@@ -112,7 +127,7 @@
             }
         }
     </script>
-
 </body>
+
 
 </html>

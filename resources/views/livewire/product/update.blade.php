@@ -56,7 +56,7 @@
                                         </div>
                                     </div>
                                     <div class="preview">
-                                        <img id="image-preview" height="200">
+                                        <img id="image-preview img-thumbnail" height="200">
                                         {{-- <img src="{{ $product->image }}" alt="">                                        --}}
                                     </div>
 

@@ -2,8 +2,10 @@
 
 namespace App\Http\Livewire\Shop;
 
-use App\Facades\Cart;
+
 use Livewire\Component;
+use App\Facades\Cart;
+
 
 class Checkout extends Component
 {
@@ -16,6 +18,8 @@ class Checkout extends Component
     public $postal_code;
     public $formCheckout;
     public $snapToken;
+    public $cart;
+    public $title;
 
     protected $listeners = [
         'emptyCart' => 'emptyCartHandler'
@@ -24,12 +28,16 @@ class Checkout extends Component
     public function mount()
     {
         $this->formCheckout = true;
+        $this->cart = Cart::get();
+        
     }
 
     public function render()
     {
         return view('livewire.shop.checkout');
     }
+
+
 
     public function checkout()
     {
@@ -60,7 +68,8 @@ class Checkout extends Component
 
         $transactionDetails = [
             'order_id' => uniqid(),
-            'gross_amount' => $amount
+            'gross_amount' => $amount,
+            'item_details' => $cart,
         ];
 
         $payload = [

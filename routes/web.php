@@ -31,8 +31,13 @@ Route::livewire('/shop', 'shop.index')
 Route::livewire('/cart', 'shop.cart')
     ->name('shop.cart');
 
+<<<<<<< HEAD
 Route::livewire('/checkout', 'shop.checkout')
     ->name('shop.checkout');
+=======
+    Route::livewire('/checkout', 'shop.checkout')
+    ->name('shop.checkout'); 
+>>>>>>> b36f3e7a3d21a7888d65fdd8c6b3c1545917bc5f
 
 
 //route profile
