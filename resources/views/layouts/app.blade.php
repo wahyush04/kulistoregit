@@ -13,7 +13,8 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     @livewireScripts
-    <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="{{ config('services.midtrans.clientKey') }}"></script>
+    <script src="https://app.sandbox.midtrans.com/snap/snap.js"
+        data-client-key="{{ config('services.midtrans.clientKey') }}"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -30,7 +31,7 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background-color: #66DE93">
+        <nav class="navbar navbar-expand-md navbar-dark shadow-sm font-weight-bold" style="background-color: #FF449F">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/home') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -44,7 +45,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a href="{{ route('shop.index') }}" class="nav-link">Store</a>
 
                         </li>
@@ -77,12 +78,12 @@
 
                                     @if (Auth::user()->email === 'admin@gmail.com')
 
-                                    <a href="{{ route('admin.product') }}" class="dropdown-item">Products</a>
+                                        <a href="{{ route('admin.product') }}" class="dropdown-item">Products</a>
 
                                     @endif
 
                                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                                    document.getElementById('logout-form').submit();">
+                                                                        document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
