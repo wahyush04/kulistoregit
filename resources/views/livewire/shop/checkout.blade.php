@@ -103,13 +103,11 @@
 
                                     <tr>
                                         <td>{{ $product['title'] }}</td>
-                                        <td>Rp{{ number_format($product['price'],2,",",".") }}</td>
-                                       
+                                        <td>Rp{{ number_format($product['price'],2,",",".") }}</td>                                      
                                     </tr>
         
                                     @endforeach
-                                </tbody>
-                               
+                                </tbody>                              
                             </table>
                         </div>
                     </div>
