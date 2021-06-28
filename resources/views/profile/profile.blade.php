@@ -8,7 +8,6 @@
 
         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
 
-<<<<<<< HEAD
     </style>
 
     <h2 class="container font-weight-bold">My Profile</h2>
@@ -44,23 +43,6 @@
                                 {{ Auth::user()->full_name }}
                             </p>
                         </h4>
-=======
-<h2 class="container font-weight-bold">My Profile</h2>
-<div class="container">
-@if (session('status'))
-            <div class="alert alert-success">
-                {{ session('status') }}
-            </div>
-            @endif
-</div>
-<div class="container" style="margin-top: 30px">
-    <div class="card shadow">
-        <div class="card-body">
-            <div class="row align-items-top mb-3">
-                <div class="col-3">
-                    <img src="/img/{{ Auth::user()->image }}" class="img-thumbnail">
-                </div>
->>>>>>> b36f3e7a3d21a7888d65fdd8c6b3c1545917bc5f
 
                         <table class="table-borderless table-sm mb-3">
                             <tbody>
