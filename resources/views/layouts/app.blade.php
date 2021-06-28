@@ -90,7 +90,7 @@
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="/profile">Profile</a> 
 
-                                    @if (Auth::user()->email === 'wahyush04@gmail.com')
+                                    @if (Auth::user()->email === 'admin@gmail.com')
 
                                     <a href="{{ route('admin.product') }}" class="dropdown-item">Products</a>
                                     
