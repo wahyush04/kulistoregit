@@ -75,16 +75,15 @@
                                     <a class="dropdown-item" href="/profile">Profile</a> 
 
                                     @if (Auth::user()->email === 'admin@gmail.com')
-
                                     <a href="{{ route('admin.product') }}" class="dropdown-item">Products</a>
-                                    
+                                    <a class="dropdown-item" href="https://dashboard.sandbox.midtrans.com/transactions">Laporan</a>                                   
                                     @endif
 
                                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                             document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-
+                                    
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
