@@ -79,7 +79,7 @@
                                     @if (Auth::user()->email === 'admin@gmail.com')
 
                                         <a href="{{ route('admin.product') }}" class="dropdown-item">Products</a>
-
+                                        <a class="dropdown-item" href="https://dashboard.sandbox.midtrans.com/transactions">Laporan </a>
                                     @endif
 
                                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
