@@ -27,9 +27,9 @@
                 </p>
 
                 <button wire:click="addToCart({{ $product->id }})" type="button"
-                    class="btn btn-sm btn-block btn-secondary text-white mb-2">Add to cart</button>
+                    class="btn btn-sm btn-block btn-primary text-white mb-2 ">+ Keranjang</button>
                 <button wire:click="detail({{ $product->id }})" type="button"
-                    class="btn btn-sm btn-block btn-secondary text-white mb-2">detail barang</button>
+                    class="btn btn-sm btn-block btn-secondary text-white mb-2 ">Detail Barang</button>
 
             </div>
         @endforeach
