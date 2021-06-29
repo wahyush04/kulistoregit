@@ -5,6 +5,8 @@
     body {
         background: #FFFFFF;
     }
+
+    
 </style>
 
 <h2 class="container font-weight-bold">Pembayaran</h2>
@@ -13,8 +15,14 @@
     <div class="card shadow mb-5">
         <div class="card-body">
 
-            <div class="row align-items-center mb-3">
+            <div class="row align-items-top mb-3">
                 <div class="col-3">
+                    <p>Kartu Kredit/Debit</p>
+                    <hr>
+                    <div class="text-left" style="margin-top: -5px;">
+                        <img src="https://img.icons8.com/color/36/000000/visa.png">
+                        <img src="https://img.icons8.com/color/36/000000/mastercard.png">
+                        <img src="https://img.icons8.com/color/36/000000/amex.png"> </div>
                 </div>
                 <div class="col-9">
                     <ul class="nav nav-tabs mb-3">
@@ -28,35 +36,10 @@
                             <a class="nav-link text-dark font-weight-bold" href="/keamanan">Keamanan</a>
                         </li>
                     </ul>
-                    <table class="table table-bordered table-sm">
-                        <tbody>
-                            <tr>
-                                <td>Nama Lengkap</td>
-                                <td class="text-center"></td>
-                            </tr>
-                            <tr>
-                                <td>Alamat</td>
-                                <td class="text-center"></td>
-                            </tr>
-                            <tr>
-                                <td>Tanggal Lahir</td>
-                                <td class="text-center"></td>
-                            </tr>
-                            <tr>
-                                <td>Jenis Kelamin</td>
-                                <td class="text-center"></td>
-                            </tr>
-                            <tr>
-                                <td>Email</td>
-                                <td class="text-center"></td>
-                            </tr>
-                            <tr>
-                                <td>Nomor HP</td>
-                                <td class="text-center"></td>
-                            </tr>
-
-                        </tbody>
-                    </table>
+                <div class="inline">
+                    <h3>Hai <strong>{{Auth::user()->name}}</strong>, Selamat datang di halaman </h3>
+                    <h3> pengaturan Pembayaran!</h3>
+                </div>
                 </div>
 
             </div>
