@@ -20,6 +20,9 @@ class Checkout extends Component
     public $snapToken;
     public $cart;
     public $title;
+    public $total;
+    
+    
 
     protected $listeners = [
         'emptyCart' => 'emptyCartHandler'
@@ -29,6 +32,7 @@ class Checkout extends Component
     {
         $this->formCheckout = true;
         $this->cart = Cart::get();
+
         
     }
 
@@ -56,6 +60,9 @@ class Checkout extends Component
             array_column($cart, 'price')
         );
 
+        $this->total = $amount;
+
+
         $customerDetails = [
             'first_name' => $this->first_name,
             'last_name' => $this->last_name,
@@ -63,7 +70,7 @@ class Checkout extends Component
             'phone' => $this->phone,
             'address' => $this->address,
             'city' => $this->city,
-            'postal_code' => $this->postal_code
+            'postal_code' => $this->postal_code,
         ];
 
         $transactionDetails = [
@@ -71,6 +78,8 @@ class Checkout extends Component
             'gross_amount' => $amount,
             'item_details' => $cart,
         ];
+
+        
 
         $payload = [
             'transaction_details' => $transactionDetails,
