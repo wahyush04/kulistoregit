@@ -26,12 +26,13 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
     @livewireStyles
 </head>
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark shadow-sm font-weight-bold" style="background-color: 	#0080ff">
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark shadow-sm font-weight-bold" style="background-color: 	#0080ff">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/home') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -47,7 +48,9 @@
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item ">
                             <a href="{{ route('shop.index') }}" class="nav-link">Store</a>
-
+                        </li>
+                        <li>                            
+                            <a class="nav-link" href="{{ url('/about')}}">About</a>
                         </li>
                         @livewire('shop.cartnav')
                     </ul>
@@ -159,7 +162,7 @@
                         <p><i class="fas fa-home me-3"></i> Mataram, NTB, Indonesia</p>
                         <p>
                             <i class="fas fa-envelope me-3"></i>
-                            KuliStore@gmail.com
+                            KuliTech@gmail.com
                         </p>
                         <p><i class="fas fa-phone me-3"></i> +6281 234 567 88</p>
                         <p><i class="fas fa-print me-3"></i> + 6281 234 567 89</p>
@@ -190,6 +193,7 @@
             }
         }
     </script>
+
 </body>
 
 

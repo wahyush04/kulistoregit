@@ -11,11 +11,14 @@
     </style>
 
     <h2 class="container font-weight-bold">My Profile</h2>
+
+    <div class="container">
     @if (session('status'))
         <div class="alert alert-success">
             {{ session('status') }}
         </div>
     @endif
+    </div>
 
     <div class="container" style="margin-top: 30px">
         <div class="card shadow">
