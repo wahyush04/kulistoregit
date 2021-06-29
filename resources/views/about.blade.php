@@ -143,7 +143,7 @@
 						</div>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.6s">
+			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.9s">
 				<div class="team-wrapper">
 					<img src="{{ asset('img/lana.jpg') }}" class="img-responsive" alt="team img">
 						<div class="team-des">
