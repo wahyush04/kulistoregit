@@ -143,18 +143,14 @@
                                 <tr>
                                     <td>Total Belanja</td>
                                     <td>:</td>
-                                    <td class="text-left"></td>
+                                    <td class="text-left">
+                                        Rp {{ number_format($total,2,",",".") }}
+                                        </td>
                                 </tr>
                             </tbody>
                         </table>
 
-                    {{-- <h1>{{ $first_name }}</h1>
-                    <h1>{{ $last_name }}</h1>
-                    <h1>{{ $email}}</h1>
-                    <h1>{{ $phone }}</h1>
-                    <h1>{{ $address }}</h1>
-                    <h1>{{ $city }}</h1>
-                    <h1>{{ $postal_code }}</h1> --}}
+
 
                     </div>
 
