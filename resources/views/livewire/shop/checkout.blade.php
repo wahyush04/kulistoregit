@@ -31,7 +31,7 @@
 
                                 <div class="form-row mb-2">
                                     <div class="col">
-                                        <input wire:model="email" type="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email">
+                                        <input wire:model="email" type="email" class="form-control @error('email') is-invalid @enderror"  placeholder="Email">
                                         @error('email')
                                             <span class="invalid-feedback">
                                                 <strong>{{ $message }}</strong>
@@ -93,8 +93,8 @@
                             <table class="table">
                                 <thead class="thead-dark">
                                     <tr>
-                                        <th>Nama</th>
-                                        <th>Price</th>
+                                        <th>Nama Barang</th>
+                                        <th>Harga</th>
                                         <th></th>
                                     </tr>
                                 </thead>
@@ -112,9 +112,51 @@
                         </div>
                     </div>
 
+                    <div>
+                        <table class="table-borderless table-sm mb-3">
+                            <tbody>
+                                <tr>
+                                    <td>Nama</td>
+                                    <td>:</td>
+                                    <td class="text-left">{{ $first_name }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Alamat</td>
+                                    <td>:</td>
+                                    <td class="text-left">{{ $address }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Kota</td>
+                                    <td>:</td>
+                                    <td class="text-left">{{ $city }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>:</td>
+                                    <td class="text-left">{{ $email }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Kode Post</td>
+                                    <td>:</td>
+                                    <td class="text-left">{{ $postal_code }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Belanja</td>
+                                    <td>:</td>
+                                    <td class="text-left"></td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-                    <h1>{{ $first_name }}</h1>
+                    {{-- <h1>{{ $first_name }}</h1>
                     <h1>{{ $last_name }}</h1>
+                    <h1>{{ $email}}</h1>
+                    <h1>{{ $phone }}</h1>
+                    <h1>{{ $address }}</h1>
+                    <h1>{{ $city }}</h1>
+                    <h1>{{ $postal_code }}</h1> --}}
+
+                    </div>
 
                     
 
