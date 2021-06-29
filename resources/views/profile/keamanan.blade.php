@@ -9,7 +9,7 @@
     
 </style>
 
-<h2 class="container font-weight-bold">Pembayaran</h2>
+<h2 class="container font-weight-bold mt-5">Keamanan</h2>
 
 <div class="container" style="margin-top: 30px">
     <div class="card shadow mb-5">

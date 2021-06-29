@@ -10,7 +10,7 @@
 
     </style>
 
-    <h2 class="container font-weight-bold">My Profile</h2>
+    <h2 class="container font-weight-bold mt-5">My Profile</h2>
 
     <div class="container">
     @if (session('status'))

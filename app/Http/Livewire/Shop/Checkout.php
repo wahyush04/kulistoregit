@@ -36,7 +36,7 @@ class Checkout extends Component
     {
         return view('livewire.shop.checkout');
     }
-
+        
 
 
     public function checkout()
