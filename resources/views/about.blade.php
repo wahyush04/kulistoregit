@@ -11,16 +11,15 @@
 	
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
 
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/animate.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/et-line-font.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
+
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
@@ -95,9 +94,9 @@
 							<h3>a.k.a Sertificate Collector</h3>
 							<hr>
 							<ul class="social-icon">
-								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-								<li><a href="#" class="fa fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
-								<li><a href="#" class="fa fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
+								<li><a href="#" class="fab fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="#" class="fab fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fab fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
 							</ul>
 						</div>
 				</div>
@@ -110,9 +109,9 @@
 							<h3>a.k.a Peace Coffe Owner</h3>
 							<hr>
 							<ul class="social-icon">
-								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-								<li><a href="#" class="fa fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
-								<li><a href="#" class="fa fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
+								<li><a href="#" class="fab fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="#" class="fab fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fab fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
 							</ul>
 						</div>
 				</div>
@@ -125,9 +124,9 @@
 							<h3>a.k.a Juragan Ayam Potong</h3>
 							<hr>
 							<ul class="social-icon">
-								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-								<li><a href="#" class="fa fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
-								<li><a href="#" class="fa fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
+								<li><a href="#" class="fab fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="#" class="fab fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fab fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
 							</ul>
 						</div>
 				</div>
@@ -140,9 +139,9 @@
 							<h3>a.k.a SadBoy</h3>
 							<hr>
 							<ul class="social-icon">
-								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-								<li><a href="#" class="fa fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
-								<li><a href="#" class="fa fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
+								<li><a href="#" class="fab fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="#" class="fab fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fab fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
 							</ul>
 						</div>
 				</div>
@@ -164,11 +163,11 @@
     <!-- Copyright -->
                 <hr>
 				<ul class="social-icon">
-					<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-					<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
-					<li><a href="#" class="fa fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
-					<li><a href="#" class="fa fa-youtube wow fadeIn" data-wow-delay="0.9s"></a></li>
-					<li><a href="#" class="fa fa-instagram wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fab fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+					<li><a href="#" class="fab fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+					<li><a href="#" class="fab fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fab fa-youtube wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fab fa-instagram wow fadeIn" data-wow-delay="0.9s"></a></li>
 				</ul>
 			</div>
 		</div>
@@ -183,6 +182,7 @@
 <script src={{ asset('js/imagesloaded.min.js') }}></script>
 <script src={{ asset('js/wow.min.js') }}></script>
 <script src={{ asset('js/custom.js') }}></script>
+
 
 </body>
 </html>
