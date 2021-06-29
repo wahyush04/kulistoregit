@@ -10,15 +10,15 @@
     <div class="row">
 
         @foreach ($products as $product)
-            <div class="col-sm-12 col-xs-12 col-md-4 col-lg-3 mb-4 ml-4 border">
-                <div class="card h-80 mt-2">
-                    <img class="card-img-top img-fluid "
+            <div class="col-sm-3 mb-3 no-gutters">
+                <div class="card" >
+                    <img class="" style="height:200px;"
                         src="{{ $product->image ? asset('/storage/' . $product->image) : 'http://placehold.it/150x150' }}"
                         alt="">
-                    <div class="card-img-overlay" style="background-color: rgba(0,0,0,0.5);">
-                    </div>
-                </div>
-                <h5 class="text-black mt-2">
+                    {{-- <div class="card-img-overlay" style=""> --}}
+                    {{-- </div> --}}
+                    <div class="card-body">
+                    <h5 class="text-black mt-2">
                     <strong>{{ $product->title }}</strong>
                 </h5>
                 <h6 class="text-black ">Rp{{ number_format($product->price, 2, ',', '.') }}</h6>
@@ -30,6 +30,11 @@
                     class="btn btn-sm btn-block btn-primary text-white mb-2 ">+ Keranjang</button>
                 <button wire:click="detail({{ $product->id }})" type="button"
                     class="btn btn-sm btn-block btn-secondary text-white mb-2 ">Detail Barang</button>
+
+                    </div>
+                </div>
+
+            
 
             </div>
         @endforeach
