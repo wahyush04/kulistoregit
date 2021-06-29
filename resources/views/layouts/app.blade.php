@@ -34,7 +34,7 @@
     <div id="app">
         <nav class="navbar fixed-top navbar-expand-md navbar-dark shadow-sm font-weight-bold" style="background-color: 	#3B3B3B">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/home') }}">
+                <a class="navbar-brand" style="color:#00c6d7" href="{{ url('/home') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
