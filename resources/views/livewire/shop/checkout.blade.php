@@ -90,6 +90,7 @@
 
                     <div class="card">
                         <div class="card-body">
+                            <h3>Daftar Pesanan</h3>
                             <table class="table">
                                 <thead class="thead-dark">
                                     <tr>
@@ -112,7 +113,11 @@
                         </div>
                     </div>
 
-                    <div>
+                    <hr>
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h3>Detail Pengiriman</h3>
+                            <hr>
                         <table class="table-borderless table-sm mb-3">
                             <tbody>
                                 <tr>
@@ -143,12 +148,13 @@
                                 <tr>
                                     <td>Total Belanja</td>
                                     <td>:</td>
-                                    <td class="text-left">
+                                    <td class="text-left display-5">
                                         Rp {{ number_format($total,2,",",".") }}
                                         </td>
                                 </tr>
                             </tbody>
                         </table>
+                        </div>
 
 
 
@@ -164,7 +170,7 @@
 
                     
 
-                        <button wire:click="$emit('payment', '{{ $snapToken }}')" class="btn btn-primary">Payment</button>
+                        <button wire:click="$emit('payment', '{{ $snapToken }}')" class="btn btn-success float-right">Pembayaran</button>
                         <script>
                             window.livewire.on('payment', function (snapToken) {
                                 snap.pay(snapToken, {

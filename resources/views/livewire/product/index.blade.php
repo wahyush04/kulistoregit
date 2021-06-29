@@ -12,8 +12,7 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">
-                        Product
-                        <button wire:click="$toggle('formVisible')" class="btn btn-sm btn-primary">Create</button>
+                        <button wire:click="$toggle('formVisible')" class="btn btn-sm btn-primary"><i class="fas fa-plus mr-2"></i>Tambah Barang</button>
                     </div>
 
                     <div class="card-body">
