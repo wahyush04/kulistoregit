@@ -26,6 +26,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
     @livewireStyles
 </head>
 
@@ -47,7 +48,9 @@
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item ">
                             <a href="{{ route('shop.index') }}" class="nav-link">Store</a>
-
+                        </li>
+                        <li>                            
+                            <a class="nav-link" href="{{ url('/about')}}">About</a>
                         </li>
                         @livewire('shop.cartnav')
                     </ul>
@@ -84,7 +87,7 @@
                                     @endif
 
                                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                                document.getElementBy Id('logout-form').submit();">
+                                                                document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
@@ -190,6 +193,7 @@
             }
         }
     </script>
+
 </body>
 
 
