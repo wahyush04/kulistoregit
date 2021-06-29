@@ -11,14 +11,14 @@
 
         @foreach ($products as $product)
             <div class="col-sm-3 mb-3 no-gutters">
-                <div class="card" >
-                    <img class="" style="height:200px;"
+                <div class="card rounded" >
+                    <img class="rounded" style="height:200px;"
                         src="{{ $product->image ? asset('/storage/' . $product->image) : 'http://placehold.it/150x150' }}"
                         alt="">
                     {{-- <div class="card-img-overlay" style=""> --}}
                     {{-- </div> --}}
                     <div class="card-body">
-                    <h5 class="text-black mt-2">
+                    <h5 class="text-black" style="margin-top: -10px">
                     <strong>{{ $product->title }}</strong>
                 </h5>
                 <h6 class="text-black ">Rp{{ number_format($product->price, 2, ',', '.') }}</h6>
