@@ -162,7 +162,7 @@
                         <p><i class="fas fa-home me-3"></i> Mataram, NTB, Indonesia</p>
                         <p>
                             <i class="fas fa-envelope me-3"></i>
-                            KuliStore@gmail.com
+                            KuliTech@gmail.com
                         </p>
                         <p><i class="fas fa-phone me-3"></i> +6281 234 567 88</p>
                         <p><i class="fas fa-print me-3"></i> + 6281 234 567 89</p>
