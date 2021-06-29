@@ -92,12 +92,12 @@
 					<img src="{{ asset('img/cahyo.jpg') }}" class="img-responsive" alt="team img">
 						<div class="team-des">
 							<h4>Wahyu Syarif Hidayatullah</h4>
-							<h3>a.k.a Sertificate Collector</h3>
+							<h3>Full-Stack Developer</h3>
 							<hr>
 							<ul class="social-icon">
-								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-								<li><a href="#" class="fa fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
-								<li><a href="#" class="fa fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
+								<li><a href="#" class="fab fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="#" class="fab fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fab fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
 							</ul>
 						</div>
 				</div>
@@ -107,12 +107,12 @@
 					<img src="{{ asset('img/geri.jpg') }}" class="img-responsive" alt="team img">
 						<div class="team-des">
 							<h4>David Geri Pradipta Riadi</h4>
-							<h3>a.k.a Peace Coffe Owner</h3>
+							<h3>Full-Stack Developer</h3>
 							<hr>
 							<ul class="social-icon">
-								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-								<li><a href="#" class="fa fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
-								<li><a href="#" class="fa fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
+								<li><a href="#" class="fab fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="#" class="fab fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fab fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
 							</ul>
 						</div>
 				</div>
@@ -122,12 +122,12 @@
 					<img src="{{ asset('img/jayadi.jpg') }}" class="img-responsive" alt="team img">
 						<div class="team-des">
 							<h4>Muhammad Jayadi</h4>
-							<h3>a.k.a Juragan Ayam Potong</h3>
+							<h3>Front-End Developer</h3>
 							<hr>
 							<ul class="social-icon">
-								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-								<li><a href="#" class="fa fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
-								<li><a href="#" class="fa fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
+								<li><a href="#" class="fab fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="#" class="fab fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fab fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
 							</ul>
 						</div>
 				</div>
@@ -137,12 +137,12 @@
 					<img src="{{ asset('img/lana.jpg') }}" class="img-responsive" alt="team img">
 						<div class="team-des">
 							<h4>Tegar Iyar Lalana</h4>
-							<h3>a.k.a SadBoy</h3>
+							<h3>Front-End Developer</h3>
 							<hr>
 							<ul class="social-icon">
-								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-								<li><a href="#" class="fa fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
-								<li><a href="#" class="fa fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
+								<li><a href="#" class="fab fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="#" class="fab fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fab fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
 							</ul>
 						</div>
 				</div>
@@ -164,11 +164,11 @@
     <!-- Copyright -->
                 <hr>
 				<ul class="social-icon">
-					<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-					<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
-					<li><a href="#" class="fa fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
-					<li><a href="#" class="fa fa-youtube wow fadeIn" data-wow-delay="0.9s"></a></li>
-					<li><a href="#" class="fa fa-instagram wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fab fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+					<li><a href="#" class="fab fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+					<li><a href="#" class="fab fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fab fa-youtube wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fab fa-instagram wow fadeIn" data-wow-delay="0.9s"></a></li>
 				</ul>
 			</div>
 		</div>
