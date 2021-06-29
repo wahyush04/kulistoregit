@@ -6,6 +6,7 @@ use App\User;
 use Illuminate\Http\Request;
 use Livewire\WithFileUploads;
 use Livewire\Component;
+use Illuminate\Support\Facades\Validator;
 
 class ProfileController extends Controller
 {
@@ -69,6 +70,13 @@ class ProfileController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    /**
+     * Get a validator for an incoming registration request.
+     *
+     * @param  array  $data
+     * @return \Illuminate\Contracts\Validation\Validator
+     */
+
     public function update(Request $request, User $user)
     {
         // $nm = $request->image;
@@ -82,7 +90,7 @@ class ProfileController extends Controller
             'alamat' => 'required',
             'tgl_lahir' => 'required',
             'nomor_hp' => 'required',
-            'email' => 'required'
+            'email' => 'required|email|unique:users,email,'.$user->id,
         ]);
         User::where('id', $user->id)
             ->update([
