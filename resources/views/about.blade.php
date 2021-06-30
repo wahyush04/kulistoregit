@@ -61,15 +61,15 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12 text-center">
-				{{-- <div class="section-title">
-					<strong>US</strong>
+				<div class="section-title">
+					<strong>KuliTech;</strong>
 					<hr>
-				</div> --}}
+				</div>
 			</div>
-			<div class="col-md-12 col-sm-12">
+			<div class="col-md-6 col-sm-12">
 				<img src="{{ asset('img/kulistore.png') }}" class="img-responsive" alt="about img">
 			</div>
-			{{-- <div class="col-md-6 col-sm-12">
+			<div class="col-md-6 col-sm-12">
 				<h3 class="bold">KuliTeam</h3>
 				<h1 class="heading bold">Sekelompok Mahasiswa yang masih mencari jalan ninjanya masing-masing</h1>
 				<!-- Nav tabs -->
@@ -85,7 +85,7 @@
 						Debitis, porro illum. Deleniti quae tenetur fugit cum autem modi similique esse officiis suscipit.</p>
 					</div>
 				</div>
-			</div> --}}
+			</div>
 		</div>
 	</div>
 </section>
