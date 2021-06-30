@@ -12,7 +12,7 @@
         @foreach ($products as $product)
             <div class="col-sm-3 mb-3 no-gutters">
                 <div class="card rounded" >
-                    <img class="rounded" style="height:200px;"
+                    <img class="rounded" style="height:225px;"
                         src="{{ $product->image ? asset('/storage/' . $product->image) : 'http://placehold.it/150x150' }}"
                         alt="">
                     {{-- <div class="card-img-overlay" style=""> --}}
@@ -26,24 +26,23 @@
                 <button wire:click="addToCart({{ $product->id }})" type="button"
                     class="btn btn-sm btn-block btn-primary text-white mb-2 ">+ Keranjang</button>
                 <button type="button"
-                    class="btn btn-sm btn-block btn-secondary text-white mb-2" data-bs-toggle="modal" data-bs-target="#{{ $product->title }}">Detail Barang</button>
+                    class="btn btn-sm btn-block btn-secondary text-white mb-2" data-bs-toggle="modal" data-bs-target="#modal{{ $product->id }}">Detail Barang</button>
                     </div>
                 </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="{{ $product->title }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="modal{{ $product->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
             <div class="modal-content">
             <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">{{ $product->title }}</h5>        
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="modal-title font-weight-bold" id="exampleModalLabel">{{ $product->title }}</h5>        
             </div>
 
 
             <div class="modal-body">
                 <div class="row">
                 <div class="col-5">
-            <img class="rounded" style="height:200px;"
+            <img class="rounded" style="height:300px; width:275px;"
                         src="{{ $product->image ? asset('/storage/' . $product->image) : 'http://placehold.it/150x150' }}"
                         alt="">
                         </div>
