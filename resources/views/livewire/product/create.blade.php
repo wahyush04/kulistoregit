@@ -8,7 +8,7 @@
 
                         <div class="form-row">
                             <div class="col">
-                                <input wire:model="title" type="text" class="form-control @error('title') is-invalid @enderror" placeholder="Title">
+                                <input wire:model="title" type="text" class="form-control @error('title') is-invalid @enderror" placeholder="Nama barang">
                                 @error('title')
                                 <span class="invalid-feedback">
                                     <strong>{{ $message }}</strong>
@@ -17,7 +17,7 @@
                             </div>
 
                             <div class="col">
-                                <input wire:model="price" type="text" class="form-control @error('price') is-invalid @enderror" placeholder="Price">
+                                <input wire:model="price" type="text" class="form-control @error('price') is-invalid @enderror" placeholder="Harga">
                                 @error('price')
                                 <span class="invalid-feedback">
                                     <strong>{{ $message }}</strong>
@@ -32,7 +32,7 @@
 
                         <div class="form-row">
                             <div class="col">
-                                <textarea wire:model="description" id="" cols="30" rows="5" class="form-control @error('description') is-invalid @enderror"></textarea>
+                                <textarea wire:model="description" id="" cols="30" rows="5" class="form-control @error('description') is-invalid @enderror" placeholder="Masukkan Deskripsi"></textarea>
                                 @error('description')
                                 <span class="invalid-feedback">
                                     <strong>{{ $message }}</strong>
@@ -50,7 +50,8 @@
                                 <div class="form-group">
                                     <div class="center">
                                         <div class="form-input">
-                                            <label for="image">Upload Image</label>
+                                            <label for="image">Upload Gambar</label>
+                                            <br>
                                             <input wire:model="image" type="file" id="image" onmouseover="showPreview(event);">
                                             
                                         </div>
