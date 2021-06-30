@@ -12,7 +12,7 @@
         @foreach ($products as $product)
         <div class="col-sm-3 mb-3 no-gutters">
             <div class="card rounded">
-                <img class="rounded-top" style="height:225px;"
+                <img class="rounded-top" style="height:250px;"
                     src="{{ $product->image ? asset('/storage/' . $product->image) : 'http://placehold.it/150x150' }}"
                     alt="">
                 {{-- <div class="card-img-overlay" style=""> --}}
