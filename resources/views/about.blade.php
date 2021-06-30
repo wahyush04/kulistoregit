@@ -66,10 +66,10 @@
 					<hr>
 				</div>
 			</div>
-			<div class="col-md-6 col-sm-12">
+			<div class="col-md-6 col-sm-12 ">
 				<img src="{{ asset('img/kulistore.png') }}" class="img-responsive" alt="about img">
 			</div>
-			<div class="col-md-6 col-sm-12">
+			<div class="col-md-6 col-sm-12" >
 				<h3 class="bold">/Kuli•Tech/</h3>
 				<h1 class="heading bold">A group of open minded people that love to programming and gaming</h1>
 				<!-- Nav tabs -->
@@ -190,7 +190,7 @@
     <!-- Copyright -->
         <div class="text-center p-4 text-white" style="background-color: rgba(0, 0, 0, 0.05);">
             © 2021 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">KuliStore</a>
+            <a class="text-reset fw-bold" href="/home">KuliStore</a>
         </div>
     <!-- Copyright -->
                 <hr>
