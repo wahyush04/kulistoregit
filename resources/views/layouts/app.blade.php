@@ -52,7 +52,7 @@
                         <li>                            
                             <a class="nav-link" href="{{ url('/about')}}">About</a>
                         </li>
-                       
+
                     </ul>
 
 
