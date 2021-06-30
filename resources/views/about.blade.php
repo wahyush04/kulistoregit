@@ -195,11 +195,11 @@
     <!-- Copyright -->
                 <hr>
 				<ul class="social-icon">
-					<li><a href="#" class="fab fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-					<li><a href="#" class="fab fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+					<li><a href="https://www.facebook.com/groups/kulipubg" class="fab fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+					<li><a href="https://github.com/wahyush04/kulistoregit" class="fab fa-github wow fadeIn" data-wow-delay="0.6s"></a></li>
 					<li><a href="#" class="fab fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
-					<li><a href="#" class="fab fa-youtube wow fadeIn" data-wow-delay="0.9s"></a></li>
-					<li><a href="#" class="fab fa-instagram wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="https://www.youtube.com/channel/UC_ie7ZpaA4d-flziBKIFuEQ" class="fab fa-youtube wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="https://discord.gg/dbDjcTUyY2" class="fab fa-discord wow fadeIn" data-wow-delay="0.9s"></a></li>
 				</ul>
 			</div>
 		</div>
