@@ -35,4 +35,10 @@ class Index extends Component
         $this->emit('addToCart');
 
     }
+
+    public function detail($productId)
+    {
+        $product = Product::find($productId);
+        
+    }
 }
