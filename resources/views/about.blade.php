@@ -141,7 +141,7 @@
 							<h3>1810530119</h3>
 							<hr>
 							<ul class="social-icon">
-								<li><a href="#" class="fab fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="https://web.facebook.com/?_rdc=1&_rdr" class="fab fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
 								<li><a href="https://www.instagram.com/jayadi662_/" class="fab fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
 								<li><a href="https://www.linkedin.com/in/muhammad-jayadi-1223401ba/" class="fab fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
 							</ul>
