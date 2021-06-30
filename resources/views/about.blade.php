@@ -70,19 +70,19 @@
 				<img src="{{ asset('img/kulistore.png') }}" class="img-responsive" alt="about img">
 			</div>
 			<div class="col-md-6 col-sm-12">
-				<h3 class="bold">KuliTeam</h3>
-				<h1 class="heading bold">Sekelompok Mahasiswa yang masih mencari jalan ninjanya masing-masing</h1>
+				<h3 class="bold">/Kuli•Tech/</h3>
+				<h1 class="heading bold">A group of open minded people that love to programming and gaming</h1>
 				<!-- Nav tabs -->
 				<ul class="nav nav-tabs" role="tablist">
-					<li class="active"><a href="#design" aria-controls="design" role="tab" data-toggle="tab">F.Y.I</a></li>
+					<li class="active"><a href="#design" aria-controls="design" role="tab" data-toggle="tab">Why KuliTech?</a></li>
 				</ul>
 
 				<!-- tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="design">
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-						Quam sed architecto quas, consequuntur natus sapiente impedit.
-						Debitis, porro illum. Deleniti quae tenetur fugit cum autem modi similique esse officiis suscipit.</p>
+						<p>"Kuli" itself means a group of people that build something depending on their physical skills. its taken from Indonesian language.
+						While Tech, means everything about technologies. Technologies is intelligence.
+						So basically, KuliTech is a group of people that using not just a physical but also an intelligence,to build a technologies. As simple as that.</p>
 					</div>
 				</div>
 			</div>
@@ -115,7 +115,7 @@
 						</div>
 				</div>
 			</div>
-			<div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="1.3s">
+			<div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.9s">
 				<div class="team-wrapper">
 					<img src="{{ asset('img/geri.jpeg') }}" class="img-responsive" style="height:445px;" alt="team img">
 						<div class="team-des">
@@ -133,7 +133,7 @@
 		</div>
 		<hr>
 		<div>
-			<div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="1.6s">
+			<div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="1s">
 				<div class="team-wrapper">
 					<img src="{{ asset('img/jayadi.jpg') }}" class="img-responsive" alt="team img">
 						<div class="team-des">
@@ -148,7 +148,7 @@
 						</div>
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="1.6s">
+			<div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="1s">
 				<div class="team-wrapper">
 					<img src="{{ asset('img/lana.jpg') }}" class="img-responsive" alt="team img">
 						<div class="team-des">
@@ -163,7 +163,7 @@
 						</div>
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="1.6s">
+			<div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="1s">
 				<div class="team-wrapper">
 					<img src="{{ asset('img/ali.jpg') }}" class="img-responsive" alt="team img">
 						<div class="team-des">
