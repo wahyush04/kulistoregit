@@ -28,7 +28,7 @@ class Create extends Component
 
         $this->validate([
             'title' => 'required|min:3',
-            'description' => 'required|max:180',
+            'description' => 'required|max:500',
             'price' => 'required|numeric',
             'image' => 'image|max:5000',
         ]);

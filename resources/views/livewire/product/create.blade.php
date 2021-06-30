@@ -32,7 +32,7 @@
 
                         <div class="form-row">
                             <div class="col">
-                                <input wire:model="description" type="text" class="form-control @error('description') is-invalid @enderror" placeholder="Description">
+                                <textarea wire:model="description" id="" cols="30" rows="5" class="form-control @error('description') is-invalid @enderror"></textarea>
                                 @error('description')
                                 <span class="invalid-feedback">
                                     <strong>{{ $message }}</strong>
