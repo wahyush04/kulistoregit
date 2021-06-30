@@ -41,7 +41,7 @@
                         </a>
                         @else
                         <h3>Wah, keranjang belanjamu kosong!</h3>
-                        <p>Yus, isi dengan barang-barang impianmu</p>
+                        <p>Yuk, isi dengan barang-barang impianmu</p>
                         <a href="{{ route('shop.index') }}" class="btn-lg btn-success font-weight-bold m-3">
                             Mulai belanja
                         </a>

@@ -102,7 +102,7 @@
 			</div>
 			<div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.9s">
 				<div class="team-wrapper">
-					<img src="{{ asset('img/cahyo.jpg') }}" class="img-responsive" alt="team img">
+					<img src="{{ asset('img/cahyo.jpg') }}" class="img-responsive" style="height:445px;" alt="team img">
 						<div class="team-des">
 							<h4>Wahyu Syarif Hidayatullah</h4>
 							<h3>1810530134</h3>
@@ -117,7 +117,7 @@
 			</div>
 			<div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="1.3s">
 				<div class="team-wrapper">
-					<img src="{{ asset('img/geri.jpg') }}" class="img-responsive" alt="team img">
+					<img src="{{ asset('img/geri.jpeg') }}" class="img-responsive" style="height:445px;" alt="team img">
 						<div class="team-des">
 							<h4>David Geri Pradipta Riadi</h4>
 							<h3>1810530133</h3>
