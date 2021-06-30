@@ -28,8 +28,8 @@
 	<div class="container">
 		<div class="navbar-header">
 			
-			<a class="navbar-brand" href="{{ url('/home') }}">
-                    {{ config('app.name', 'Laravel') }}
+			<a class="navbar-brand" style="color:#00c6d7" href="{{ url('/home') }}">
+                    <img src="img/kulistore.png" style="width: 70px ; height = 50px"  alt="">
             </a>
 		</div>
 		<div class="collapse navbar-collapse">
@@ -61,15 +61,15 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12 text-center">
-				<div class="section-title">
+				{{-- <div class="section-title">
 					<strong>US</strong>
 					<hr>
-				</div>
+				</div> --}}
 			</div>
-			<div class="col-md-6 col-sm-12">
-				<img src="{{ asset('img/kuli.jpeg') }}" class="img-responsive" alt="about img">
+			<div class="col-md-12 col-sm-12">
+				<img src="{{ asset('img/kulistore.png') }}" class="img-responsive" alt="about img">
 			</div>
-			<div class="col-md-6 col-sm-12">
+			{{-- <div class="col-md-6 col-sm-12">
 				<h3 class="bold">KuliTeam</h3>
 				<h1 class="heading bold">Sekelompok Mahasiswa yang masih mencari jalan ninjanya masing-masing</h1>
 				<!-- Nav tabs -->
@@ -85,7 +85,7 @@
 						Debitis, porro illum. Deleniti quae tenetur fugit cum autem modi similique esse officiis suscipit.</p>
 					</div>
 				</div>
-			</div>
+			</div> --}}
 		</div>
 	</div>
 </section>
@@ -100,57 +100,75 @@
 					<hr>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.9s">
+			<div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.9s">
 				<div class="team-wrapper">
 					<img src="{{ asset('img/cahyo.jpg') }}" class="img-responsive" alt="team img">
 						<div class="team-des">
 							<h4>Wahyu Syarif Hidayatullah</h4>
-							<h3>Full-Stack Developer</h3>
+							<h3>1810530134</h3>
 							<hr>
 							<ul class="social-icon">
-								<li><a href="#" class="fab fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-								<li><a href="#" class="fab fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
-								<li><a href="#" class="fab fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
+								<li><a href="https://www.facebook.com/wahyush04" class="fab fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="https://www.instagram.com/wahyush04/" class="fab fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="https://www.linkedin.com/in/wahyu-syarif-232a5b115/" class="fab fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
 							</ul>
 						</div>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.3s">
+			<div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="1.3s">
 				<div class="team-wrapper">
 					<img src="{{ asset('img/geri.jpg') }}" class="img-responsive" alt="team img">
 						<div class="team-des">
 							<h4>David Geri Pradipta Riadi</h4>
-							<h3>Full-Stack Developer</h3>
+							<h3>1810530133</h3>
 							<hr>
 							<ul class="social-icon">
-								<li><a href="#" class="fab fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-								<li><a href="#" class="fab fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="https://www.facebook.com/DavidakaMaJesTY" class="fab fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="https://www.instagram.com/davidgerii/" class="fab fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
 								<li><a href="#" class="fab fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
 							</ul>
 						</div>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.6s">
+		</div>
+		<hr>
+		<div>
+			<div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="1.6s">
 				<div class="team-wrapper">
 					<img src="{{ asset('img/jayadi.jpg') }}" class="img-responsive" alt="team img">
 						<div class="team-des">
 							<h4>Muhammad Jayadi</h4>
-							<h3>Front-End Developer</h3>
+							<h3>1810530119</h3>
 							<hr>
 							<ul class="social-icon">
 								<li><a href="#" class="fab fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-								<li><a href="#" class="fab fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
-								<li><a href="#" class="fab fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
+								<li><a href="https://www.instagram.com/jayadi662_/" class="fab fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="https://www.linkedin.com/in/muhammad-jayadi-1223401ba/" class="fab fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
 							</ul>
 						</div>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.9s">
+			<div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="1.6s">
 				<div class="team-wrapper">
 					<img src="{{ asset('img/lana.jpg') }}" class="img-responsive" alt="team img">
 						<div class="team-des">
 							<h4>Tegar Iyar Lalana</h4>
-							<h3>Front-End Developer</h3>
+							<h3>1810530154</h3>
+							<hr>
+							<ul class="social-icon">
+								<li><a href="https://www.facebook.com/profile.php?id=100008761148577" class="fab fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="https://www.instagram.com/lalanategar/" class="fab fa-instagram wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="https://www.linkedin.com/in/lalana-tegar-3b5241196/" class="fab fa-linkedin wow fadeIn" data-wow-delay="0.9s"></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="1.6s">
+				<div class="team-wrapper">
+					<img src="{{ asset('img/ali.jpg') }}" class="img-responsive" alt="team img">
+						<div class="team-des">
+							<h4>Muhammad Saleh Hambali</h4>
+							<h3>1810530143</h3>
 							<hr>
 							<ul class="social-icon">
 								<li><a href="#" class="fab fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
