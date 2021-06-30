@@ -15,14 +15,12 @@
                 <img class="rounded-top" style="height:250px;"
                     src="{{ $product->image ? asset('/storage/' . $product->image) : 'http://placehold.it/150x150' }}"
                     alt="">
-                {{-- <div class="card-img-overlay" style=""> --}}
-                {{-- </div> --}}
                 <div class="card-body">
                     <h5 class="text-black" style="margin-top: -10px">
                         <strong>{{ $product->title }}</strong>
                     </h5>
                     <h6 class="text-black ">Rp{{ number_format($product->price, 2, ',', '.') }}</h6>
-
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
                     <button wire:click="addToCart({{ $product->id }})" type="button"
                         class="btn btn-sm btn-block btn-primary text-white mb-2 ">+ Keranjang</button>
                     <button type="button" class="btn btn-sm btn-block btn-secondary text-white mb-2"
