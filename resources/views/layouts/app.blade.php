@@ -35,7 +35,7 @@
         <nav class="navbar fixed-top navbar-expand-md navbar-dark shadow-sm font-weight-bold" style="background-color: 	#3B3B3B">
             <div class="container">
                 <a class="navbar-brand" style="color:#00c6d7" href="{{ url('/home') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    <img src="img/kulistore.png" style="width: 70px ; height = 50px"  alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"

@@ -34,9 +34,19 @@
                         </tbody>         
                     </table>
                     <div class="text-center mt-5">
-                    <a href="{{ route('shop.checkout') }}" class="btn-lg btn-primary">
-                                        Checkout
-                                    </a>
+
+                        @if ($cart['products'])
+                        <a href="{{ route('shop.checkout') }}" class="btn-lg btn-primary">
+                            Checkout
+                        </a>
+                        @else
+                        <h3>Wah, keranjang belanjamu kosong!</h3>
+                        <p>Yus, isi dengan barang-barang impianmu</p>
+                        <a href="{{ route('shop.index') }}" class="btn-lg btn-success font-weight-bold m-3">
+                            Mulai belanja
+                        </a>
+                        @endif
+                    
                     </div>
                 </div>
             </div>
