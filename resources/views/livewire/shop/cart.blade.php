@@ -5,15 +5,21 @@
                 <div class="card-body">
                     <table class="table">
                         <thead class="thead-dark">
-                            <tr>
+                            <tr>    
+                                <th>No</th>
+                                <th>Gambar</th>
                                 <th>Nama</th>
-                                <th>Price</th>
+                                <th>Harga</th>
                                 <th></th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($cart['products'] as $product)
                                 <tr>
+                                    <td>{{$loop->iteration}}</td>
+                                    <td><img class="rounded" style="height:30px; width:25px;"
+                                    src="{{ $product->image ? asset('/storage/' . $product->image) : 'http://placehold.it/150x150' }}"
+                                    alt=""></td>
                                     <td>{{ $product->title }}</td>
                                     <td>Rp{{ number_format($product->price, 2, ',', '.') }}</td>
                                     <td>
@@ -25,17 +31,13 @@
                                 </tr>
 
                             @endforeach
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td colspan="3">
-                                    <a href="{{ route('shop.checkout') }}" class="btn btn-primary float-right">
+                        </tbody>         
+                    </table>
+                    <div class="text-center mt-5">
+                    <a href="{{ route('shop.checkout') }}" class="btn-lg btn-primary">
                                         Checkout
                                     </a>
-                                </td>
-                            </tr>
-                        </tfoot>
-                    </table>
+                    </div>
                 </div>
             </div>
         </div>
