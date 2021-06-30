@@ -17,6 +17,7 @@
         data-client-key="{{ config('services.midtrans.clientKey') }}"></script>
 
     <!-- Fonts -->
+    <link rel="icon" href="img/trolley.png" type="image" sizes="16x16">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
