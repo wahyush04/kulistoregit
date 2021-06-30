@@ -20,7 +20,7 @@
                         <strong>{{ $product->title }}</strong>
                     </h5>
                     <h6 class="text-black ">Rp{{ number_format($product->price, 2, ',', '.') }}</h6>
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    <i class="fas fa-star" style="color: #FFC947"></i><i class="fas fa-star"  style="color: #FFC947"></i><i class="fas fa-star"  style="color: #FFC947"></i><i class="fas fa-star-half-alt"  style="color: #FFC947"></i><i class="far fa-star"  style="color: #FFC947"></i>
                     <button wire:click="addToCart({{ $product->id }})" type="button"
                         class="btn btn-sm btn-block btn-primary text-white mb-2 ">+ Keranjang</button>
                     <button type="button" class="btn btn-sm btn-block btn-secondary text-white mb-2"
