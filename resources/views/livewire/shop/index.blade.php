@@ -58,7 +58,7 @@
 
                     <div class="modal-footer float-left">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <a wire:click="addToCart({{ $product->id }})" class="btn btn-primary" href="{{Route('shop.index')}}" target="_parent">+ Keranjang</a>
+                        <a wire:click="addToCart({{ $product->id }})" class="btn btn-primary" href="{{Route('shop.index')}}">+ Keranjang</a>
 
                     </div>
                 </div>

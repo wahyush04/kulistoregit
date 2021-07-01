@@ -1,4 +1,4 @@
-<div wire:poll.50ms>
+
     <li class="nav-item">
         <a href="{{ route('shop.cart') }}" class="nav-link "">
             <i class="fas fa-shopping-cart"></i>
@@ -10,4 +10,4 @@
 
 
     </li>
-</div>
+
