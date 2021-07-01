@@ -4,13 +4,11 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
-use Livewire\WithFileUploads;
-use Livewire\Component;
-use Illuminate\Support\Facades\Validator;
+
 
 class ProfileController extends Controller
 {
-    use WithFileUploads;
+    // use WithFileUploads;
     /**
      * Display a listing of the resource.
      *
@@ -104,7 +102,6 @@ class ProfileController extends Controller
 
             ]);
         // $nm->save(public_path() . '/img', $namaFile);
-
         return redirect('/profile')->with('status', 'Data berhasil diubah!');
     }
 

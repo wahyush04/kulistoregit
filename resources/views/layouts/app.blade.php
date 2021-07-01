@@ -180,7 +180,7 @@
         <!-- Copyright -->
         <div class="text-center p-4 text-white" style="background-color: rgba(0, 0, 0, 0.05);">
             © 2021 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">KuliStore</a>
+            <a class="text-reset fw-bold" href="/shop">KuliStore</a>
         </div>
         <!-- Copyright -->
     </footer>

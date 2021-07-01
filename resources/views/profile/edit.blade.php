@@ -61,8 +61,8 @@
                             </div>
 
                             <label for="tgl_lahir" class="font-weight-bold">Pilih Gambar</label> <br>
-                            <input type="file" id="image" name="image">
-
+                            <input type="file" id="image" name="image"> 
+                            
                             <hr>
                             <h5 class="mt-4">
                                 <p class="font-weight-bold ml-2">Kontak</p>
