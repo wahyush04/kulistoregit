@@ -80,9 +80,24 @@
                                         @enderror
                                     </div>
                                 </div>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="">Provinsi</label>
+                                            <select wire:model="ongkir" name="origin_province" id="" class="form-control">
+                                                <option value="#">-</option>
+                                                @foreach ($province as $prov)
+                                                <option value="{{ $prov['ongkir'] }}">{{ $prov['title'] }}</option>
+                                            @endforeach
+                                            </select>
+                                        </div>                                          
+                                    </div>
+    
+                                </div>
 
                                 <button type="submit" class="btn btn-sm btn-primary">Submit</button>
                             </div>
+                            
                         </form>
                     @else
 
@@ -94,20 +109,34 @@
                             <table class="table">
                                 <thead class="thead-dark">
                                     <tr>
+                                        <th>No</th>
                                         <th>Nama Barang</th>
                                         <th>Harga</th>
-                                        <th></th>
+                                        
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @foreach($cart['products'] as $product)
 
                                     <tr>
+                                        <td>{{$loop->iteration}}</td>
                                         <td>{{ $product['title'] }}</td>
                                         <td>Rp{{ number_format($product['price'],2,",",".") }}</td>                                      
                                     </tr>
         
                                     @endforeach
+                                    <tr>
+                                        <td class="font-weight-bold text-info"  colspan="2">Ongkir</td>
+                                        <td class="text-left display-5 text-info">
+                                            Rp {{ number_format($ongkir,2,",",".") }}
+                                            </td>                                      
+                                    </tr>
+                                    <tr class="bg-success">
+                                        <td class="font-weight-bold"  colspan="2">TOTAL</td>
+                                        <td class="text-left display-5 font-weight-bold">
+                                            Rp {{ number_format($total,2,",",".") }}
+                                            </td>                                      
+                                    </tr>
                                 </tbody>                              
                             </table>
                         </div>
@@ -146,9 +175,14 @@
                                     <td class="text-left">{{ $postal_code }}</td>
                                 </tr>
                                 <tr>
-                                    <td>Total Belanja</td>
+                                    <td>Ongkir</td>
                                     <td>:</td>
-                                    <td class="text-left display-5">
+                                    <td class="text-left">{{ $ongkir }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Total</td>
+                                    <td>:</td>
+                                    <td class="text-left display-5 font-weight-bold">
                                         Rp {{ number_format($total,2,",",".") }}
                                         </td>
                                 </tr>
@@ -161,11 +195,6 @@
                     </div>
 
                     
-
-
-
-
-
 
 
                     

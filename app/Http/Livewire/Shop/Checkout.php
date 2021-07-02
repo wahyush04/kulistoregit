@@ -5,7 +5,10 @@ namespace App\Http\Livewire\Shop;
 
 use Livewire\Component;
 use App\Facades\Cart;
-
+use App\City;
+use App\Courier;
+use App\Province;
+use phpDocumentor\Reflection\Types\This;
 
 class Checkout extends Component
 {
@@ -21,6 +24,10 @@ class Checkout extends Component
     public $cart;
     public $title;
     public $total;
+    public $province;
+    public $kabupaten;
+    public $ongkir;
+    public $barang;
     
     
 
@@ -38,10 +45,24 @@ class Checkout extends Component
 
     public function render()
     {
+
+        $this->province = Province::get();
+        $this->kabupaten = City::get();
+
         return view('livewire.shop.checkout');
     }
         
+    public function getProvince()
+    {
+        return Province::pluck('title', 'ongkir');
+    }
 
+    public function getKabupaten()
+    {
+        return Province::get();
+    }
+
+    
 
     public function checkout()
     {
@@ -55,10 +76,16 @@ class Checkout extends Component
             'postal_code' => 'required'
         ]);
 
+
+        $ongkir = $this->ongkir;
         $cart = Cart::get()['products'];
-        $amount = array_sum(
+
+        $barang = array_sum(
             array_column($cart, 'price')
         );
+
+
+        $amount = $barang + $ongkir;
 
         $this->total = $amount;
 

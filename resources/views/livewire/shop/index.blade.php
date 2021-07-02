@@ -13,7 +13,7 @@
         <div class="col-sm-3 mb-3 no-gutters">
             <div class="card rounded">
                 <img class="rounded-top" style="height:250px;"
-                    src="{{ $product->image ? asset('/storage/' . $product->image) : 'http://placehold.it/150x150' }}"
+                    src="{{ $product->image ? asset('../../storage/' . $product->image) : 'http://placehold.it/150x150' }}"
                     alt="">
                 <div class="card-body">
                     <h5 class="text-black" style="margin-top: -10px">
